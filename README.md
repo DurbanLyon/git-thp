@@ -13,7 +13,6 @@ Khalil Saghour - saghourkhalil<br>
 Salim Boumediene - abouadamwawawa<br>
 Andre Palma - AndreaPLM
 
-## TUBA
-Lea
-Morine
-Claire
+## THANKING
+
+Special thanks to the TUBA Team (Lea, Morine, Claire) to accept us in the co-working spaces.
