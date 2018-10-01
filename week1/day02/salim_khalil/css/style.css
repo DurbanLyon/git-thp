@@ -1,0 +1,49 @@
+body {
+    height: 100%;
+    margin: 0;
+	padding-top: 100px ;
+}
+.saghour{
+	top: -295px;
+	width: 10%;
+	}
+.imagge{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	}
+
+.search{
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content:center;
+	height: 44px;
+	background: #fff;
+	}
+.bouton{
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content:center;
+	margin: 11px 4px;
+	}
+.searchinput{
+	width: 630px;
+	}
+.recherche{
+    height: 36px;
+    line-height: 27px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 16px;
+    margin: 11px 4px;
+    border: none;
+	}
+.chance{
+	height: 36px;
+    line-height: 27px;
+	font-size: 13px;
+	font-weight: bold;
+    margin: 11px 4px;
+    padding: 0 16px;
+    border: none;
+	}
