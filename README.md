@@ -4,7 +4,7 @@ This repo is a group repo for THP and it could be subject of a lot of update, bu
 > git clone https://github.com/VITRI0L/git-thp.git
 
 ***
-## CREATOR
+## CREATORS
 Jolan Lacroix - VITRI0L<br>
 Josselin Gifard - Redcozmo<br>
 Andrea Palma - AndreaPLM<br>
@@ -14,6 +14,6 @@ Khalil Saghour - saghourkhalil<br>
 Salim Boumediene - abouadamwawawa
 
 ***
-### THANKING
+### THANKINGS
 
 Special thanks to the TUBA Team (Lea, Morine, Claire) to accept us in the co-working spaces.
