@@ -11,3 +11,4 @@ Kenadi Smoth - DurbanLyon
 Quentin Potie - TinQk
 Khalil Saghour - saghourkhalil
 Salim Boumediene - abouadamwawawa
+Andre Palma - AndreaPLM
