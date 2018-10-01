@@ -1,0 +1,11 @@
+#header{
+
+	color: red;
+	display:flex;
+	justify-content: flex-end;
+}
+
+.googleimg {
+	display: flex;
+	justify-content: center;
+}
