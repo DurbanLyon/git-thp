@@ -5,10 +5,10 @@ This repo is a group repo for THP and it could be subject of a lot of update, bu
 
 ***
 ## CREATOR
-Jolan Lacroix - VITRI0L
-Josselin Gifard - Redcozmo
-Kenadi Smoth - DurbanLyon
-Quentin Potie - TinQk
-Khalil Saghour - saghourkhalil
-Salim Boumediene - abouadamwawawa
+Jolan Lacroix - VITRI0L<br>
+Josselin Gifard - Redcozmo<br>
+Kenadi Smoth - DurbanLyon<br>
+Quentin Potie - TinQk<br>
+Khalil Saghour - saghourkhalil<br>
+Salim Boumediene - abouadamwawawa<br>
 Andre Palma - AndreaPLM
