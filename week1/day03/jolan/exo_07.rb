@@ -32,9 +32,9 @@ def connect(password)
         print "> "
         tmp_password = gets.chomp
         if tmp_password == password
+            puts "You are now logged in (use CTRL+C to logout)"
             i = 0
             while i
-                puts "You are now logged in (use CTRL+C to logout)"
                 i += 1
             end
         else
