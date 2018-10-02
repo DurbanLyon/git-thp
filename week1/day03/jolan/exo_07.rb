@@ -2,8 +2,8 @@ def define_password
     puts "Please choose a password"
     print "> "
     password = gets.chomp
-    @user_password = password
-    return @user_password
+    $password = password
+    return $password
 end
 
 def verif_password(password)
@@ -18,6 +18,7 @@ end
 
 def perform(password, check)
     if check == true
+        @user_password = password
         return true
     end
     return false
@@ -49,6 +50,7 @@ def connect(password)
 end
 
 def help()
+    print "\n"
     puts "  -help -- use help to see command tools"
     puts "  -show -- use show to print your password"
     puts "  -chan -- use chan to change your password"
@@ -57,11 +59,13 @@ def help()
 end
 
 def show()
+    print "\n"
     puts "  -show -- Your actual password is #{@user_password}"
     print "\n"
 end
 
 def chan()
+    print "\n"
     puts "  -chan -- You make a request to change your password, you will be disconnected"
     puts "      loading, please wait"
     print "\n"
@@ -70,7 +74,15 @@ def chan()
     check = verif_password(password)
     access = perform(password, check)
 
-    puts "  YOUR PASSWORD HAVE BEEN CHANGED"
+    if access == true
+        print "\n"
+        puts "  -chan -- Your password has been changed, use -show to see the changes"
+        print "\n"
+    else
+        print "\n"
+        puts "  -chan -- Error has occured, please retry ..."
+        print "\n"
+    end
 end
 
 def init()
