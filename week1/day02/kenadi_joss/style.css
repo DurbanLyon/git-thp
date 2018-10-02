@@ -1,12 +1,33 @@
 .header{
 
-		color: red;
+		color: #222222 ;
 		display: flex;
 		justify-content: flex-end;
+		
 }
+
+.E1E2{	
+		display: flex;
+		flex-direction: row;
+		font-size: 15px;
+		padding-top: 11px;
+		
+}
+
+.Element1, .Element2 {
+		padding-right: 15px;
+
+}
+
 
 body {
 		font-family:'Roboto',arial,sans-serif;
+}
+
+.Element3 {	
+		display: flex:;
+		padding-right: 15px;
+		padding-top: 7px;
 }
 
 
@@ -26,26 +47,33 @@ body {
 		/*cursor: pointer;*/
 }
 
-.button2 {
+.button2, .button3 {
 
 		display: flex;
 		justify-content: center;
-		border: 1px solid black;
-		width: 200px;
+		background-color: #f8f8f8;
+		border: none;
+		border-radius: 2px;
+		color: #222222;
+		color: rgb(34, 34, 34);
+		font-family:'Roboto',arial,sans-serif;
+		font-weight: bold;
+		padding: 7px 13.5px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 13px;
+		margin: 4px 2px;
+
 }
 
-.button3 {
-
-		display: flex;
-		justify-content: center;
-		border: 1px solid black;
-		width: 200px;
-}
 
 .button {
 		display: flex;
 		justify-content: center;
-
+		
+		
+		/*cursor: pointer;*/
 }
 
 .bar{
@@ -66,5 +94,31 @@ body {
 
 		color: red;
 		display: flex;
+		justify-content: ;
+		flex-direction: column;
+}
+
+.F2{
+		display: flex;
+		justify-content: ;
+		flex-direction: row;
+}
+
+
+/*.F2L{
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: row;
+}
+
+.F2R{
+		display: flex;
 		justify-content: flex-end;
+		flex-direction: row;
+}*/
+
+.F2L, .F2R {
+		display: flex;
+		justify-content: space-between;
+		align-items: row;
 }
