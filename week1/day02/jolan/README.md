@@ -1,4 +1,4 @@
 ***
 ## GOOGLE HOME PAGE
 
-Created by Jolan Lacroix - VITRI0L
+Actual Version - https://vitri0l.github.io/google-home-page/
