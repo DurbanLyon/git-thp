@@ -1,16 +1,14 @@
 body {
-    height: 100%;
-    margin: 0;
-	padding-top: 100px ;
+    height: 100%;   
 }
-.saghour{
-	top: -295px;
-	width: 10%;
-	}
+
 .imagge{
+	padding-top: 190px;
 	display: flex;
 	justify-content:center;
 	align-items:center;
+	padding-left: 250px;
+	padding-bottom: 60px;
 	}
 
 .search{
@@ -33,17 +31,82 @@ body {
     height: 36px;
     line-height: 27px;
     font-size: 13px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    border: none;
+    background-color:#E5E5E5;
+}
+.recherche:hover{
+    height: 36px;
+    line-height: 27px;
+    font-size: 13px;
     font-weight: bold;
     padding: 0 16px;
     margin: 11px 4px;
     border: none;
+    color: black;
+    background-color:#E5E5E5; 
 	}
 .chance{
 	height: 36px;
     line-height: 27px;
 	font-size: 13px;
-	font-weight: bold;
     margin: 11px 4px;
     padding: 0 16px;
     border: none;
-	}
+    background-color:#E5E5E5;
+}
+
+.chance:hover{
+	 height: 36px;
+    line-height: 27px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 16px;
+    margin: 11px 4px;
+    border: none;
+    color: black;
+    background-color:#E5E5E5; 
+}
+
+nav.menu ul li.gmail {
+	display: flex; 
+	float: right;
+    padding: 0 5px;
+    margin: 9px 4px;
+}
+nav.menu ul li.gmail:hover a{
+	text-decoration: none;
+	background-color:white;
+	color:#fff;
+}
+nav.menu ul li.gmail a{
+	text-decoration: none;
+	color: black;
+}
+nav.menu ul li.rond {
+	display: flex; 
+	float: right;
+	
+}
+nav.menu ul li.rond a img{
+	display: flex; 
+	float: right;
+	border-radius: 50%;
+}
+nav.menu ul li.img {
+	display: flex; 
+	float: right;
+	padding-right: 15px;
+	padding-left: 10px;
+}
+nav.menu ul li.cloche{
+	display: flex; 
+	float: right;
+	padding-bottom: 15px;
+}
+nav.menu ul li.cloche a img{
+	
+	border-radius: 50%;
+}
+
