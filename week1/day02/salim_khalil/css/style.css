@@ -182,3 +182,60 @@ nav.menu ul li.cloche a img{
 
 
 
+#footer{
+	display: flex;
+	justify-content: space-between;;
+	height: 32px;
+	position: fixed;
+	right: 0;
+    bottom: 0 !important;
+    width: 100%;
+	background-color: #f2f2f2;
+	font-size: 14px;
+	
+}
+#footer a {
+	text-decoration: none;
+	color: #717171;
+}
+
+#footerleft{
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
+}
+
+#footeradvert{
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+#footerbus{
+	text-decoration: none;
+	padding-left: 15px;
+}
+
+#footerabout{
+	padding-left: 15px;
+}
+
+#footerright{
+	display: flex;
+	align-items: center;
+}
+
+#footercon{
+	padding-left: 10px;
+}
+
+#footerinf{
+	padding-left: 15px;
+}
+
+#footerpri{
+	padding-left: 15px;
+}
+
+#footerset{
+	padding-left: 15px;
+}
