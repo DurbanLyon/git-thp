@@ -34,7 +34,7 @@ def connect(password)
         if tmp_password == password
             i = 0
             while i
-                puts "You are now logged in"
+                puts "You are now logged in (use CTRL+C to logout)"
                 i += 1
             end
         else
