@@ -66,7 +66,7 @@ def launcher()
     puts "  The Game launch at stage 0, there is 10 stage to reach"
     puts "  When you start a game, dice are rolled"
     puts "  They will be while they dont reach the last stage"
-    puts "  You need two win for get point and need to loose for lose point"
+    puts "  You need two win for get point and need two loose for lose point"
     puts "  Rules are very simple :"
     print "\n"
     puts "  [1] - Go to the last box, if 0 stay at 0"
