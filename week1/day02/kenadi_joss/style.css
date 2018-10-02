@@ -1,23 +1,29 @@
 .header{
 
-	color: red;
-	display: flex;
-	justify-content: flex-end;
-}
-
-.footer{
-
 		color: red;
 		display: flex;
 		justify-content: flex-end;
 }
 
-.button1 {
+body {
+		font-family:'Roboto',arial,sans-serif;
+}
 
-		display: flex;
-		justify-content: center;
-		border: 1px solid black;
-		width: 200px;
+
+.button1{
+		background-color: #469AE6;
+		border: none;
+		border-radius: 2px;
+		color: white;
+		font-family:'Roboto',arial,sans-serif;
+		font-weight: bold;
+		padding: 7px 13.5px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 14px;
+		margin: 4px 2px;
+		/*cursor: pointer;*/
 }
 
 .button2 {
@@ -26,6 +32,20 @@
 		justify-content: center;
 		border: 1px solid black;
 		width: 200px;
+}
+
+.button3 {
+
+		display: flex;
+		justify-content: center;
+		border: 1px solid black;
+		width: 200px;
+}
+
+.button {
+		display: flex;
+		justify-content: center;
+
 }
 
 .bar{
@@ -37,6 +57,14 @@
 
 
 .googleimg {
-	display: flex;
-	justify-content: center;
+		display: flex;
+		justify-content: center;
+}
+
+
+.footer{
+
+		color: red;
+		display: flex;
+		justify-content: flex-end;
 }
