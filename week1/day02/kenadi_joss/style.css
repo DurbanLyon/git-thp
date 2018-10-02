@@ -1,6 +1,6 @@
 .header{
 
-		color: #222222 ;
+		color: #222222;
 		display: flex;
 		justify-content: flex-end;
 		
@@ -22,6 +22,10 @@
 
 body {
 		font-family:'Roboto',arial,sans-serif;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		height: 500px;
 }
 
 .Element3 {	
@@ -47,6 +51,8 @@ body {
 		/*cursor: pointer;*/
 }
 
+
+
 .button2, .button3 {
 
 		display: flex;
@@ -58,7 +64,7 @@ body {
 		color: rgb(34, 34, 34);
 		font-family:'Roboto',arial,sans-serif;
 		font-weight: bold;
-		padding: 7px 13.5px;
+		padding: 14px 20px;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
@@ -67,21 +73,42 @@ body {
 
 }
 
+.content {
+
+		display: flex;
+		flex-flow: space-between;
+		flex-direction: column;
+		
+
+}
 
 .button {
+		padding-top: 15px;
 		display: flex;
 		justify-content: center;
-		
-		
 		/*cursor: pointer;*/
 }
 
 .bar{
-
+		padding-top: 15px;
 		display: flex;
 		justify-content: center;
 }
 
+.sbar{
+		float: left;
+		 width: 550px;
+		 border: 1px solid #CECECE;
+		 padding: 5px;
+		 height: 40px;
+		 border-radius: 2px;
+		 outline: none;
+		 font-size: 18px;
+		 -moz-box-shadow:     2px 2px 4px #ccc;
+		 -webkit-box-shadow:   2px 2px 4px #ccc;
+		 box-shadow:           2px 2px 4px #ccc;
+
+}
 
 
 .googleimg {
@@ -90,35 +117,54 @@ body {
 }
 
 
-.footer{
+.footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+}
 
-		color: red;
+.EF1 {
+		color: #666666;
+		font-size: 15px;
+		padding-left: 12px;
+		padding-top: 12px;
+}
+
+
+.F1{
 		display: flex;
-		justify-content: ;
 		flex-direction: column;
+		flex-direction: space-between;
+		height: 40px;
+		background: #F0F0F0;
+		border-top: 1px solid #DDDDDD;
+
+		
 }
 
 .F2{
 		display: flex;
-		justify-content: ;
+		justify-content: space-between ;
 		flex-direction: row;
+		align-self: baseline;
+		background: #F0F0F0;
+		border-top: 1px solid #DDDDDD;
+		height: 40px;
 }
-
-
-/*.F2L{
-		display: flex;
-		justify-content: flex-start;
-		flex-direction: row;
-}
-
-.F2R{
-		display: flex;
-		justify-content: flex-end;
-		flex-direction: row;
-}*/
-
 .F2L, .F2R {
+
 		display: flex;
-		justify-content: space-between;
-		align-items: row;
+		justify-content: ;
+
 }
+
+.EF2, .EF3, .EF4, .EF5, .EF6, .EF7, .EF8{
+	padding-left: 12px;
+	padding-top: 12px;
+	padding-right: 22px;
+	font-size: 13px;
+	color: #666666;
+
+}
+
+
