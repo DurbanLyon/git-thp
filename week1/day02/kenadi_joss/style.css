@@ -93,7 +93,6 @@ body {
 		padding-top: 15px;
 		display: flex;
 		justify-content: center;
-
 }
 
 .sbar{
@@ -105,6 +104,9 @@ body {
 		 border-radius: 2px;
 		 outline: none;
 		 font-size: 18px;
+		 -moz-box-shadow:     2px 2px 4px #ccc;
+		 -webkit-box-shadow:   2px 2px 4px #ccc;
+		 box-shadow:           2px 2px 4px #ccc;
 
 }
 
