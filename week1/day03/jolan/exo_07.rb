@@ -66,7 +66,7 @@ end
 
 def chan()
     print "\n"
-    puts "  -chan -- You make a request to change your password, you will be disconnected"
+    puts "  -chan -- You make a request to change your password"
     puts "      loading, please wait"
     print "\n"
     
