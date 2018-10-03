@@ -3,9 +3,9 @@ def dice()
     return i
 end
 
-def reroll(tmp)
-    tmp = dice()
-    return tmp
+def reroll(roll)
+    roll = dice()
+    return roll
 end
 
 def display(value)
@@ -30,31 +30,42 @@ def game(roll)
             if i == 0
                 i = 0
                 print "[ #{roll} ]"
-		print "[ \033[0;31mERROR\033[0;0m  ]   "
-		print "#{display(i - 1)}   "
-		print "[ \033[0;31m- YOU ARE NOW ON STAGE #{i}\033[0;0m  ]"
+		        print "[ \033[0;31mLOOSE\033[0;0m  ]   "
+		        print "#{display(i - 1)}   "
+		        print "[ \033[0;31m- YOU ARE NOW ON STAGE #{i}\033[0;0m  ]"
                 print "\n"
                 roll = reroll(roll)
             else
                 i -= 1
-                print "[ #{roll} ][ \033[0;31mLOOSE\033[0;0m  ]   #{display(i - 1)}   [ \033[0;31m- YOU ARE NOW ON STAGE #{i}\033[0;0m  ]"
+                print "[ #{roll} ]"
+                print "[ \033[0;31mLOOSE\033[0;0m  ]   "
+                print "#{display(i - 1)}   "
+                print "[ \033[0;31m- YOU ARE NOW ON STAGE #{i}\033[0;0m  ]"
                 print "\n"
                 roll = reroll(roll)
             end
         end
         if roll == 2 || roll == 3 || roll == 4
-            print "[ #{roll} ][ REROLL ]   #{display(i - 1)}   [ o DICE ARE ROLLED         ]"
+            print "[ #{roll} ]"
+            print "[ REROLL ]   "
+            print "#{display(i - 1)}   "
+            print"[ o DICE ARE ROLLED         ]"
             print "\n"
             roll = reroll(roll)
         end
         if roll == 5 || roll == 6
             if i == 10
-                print "\n"
-                print "[ #{roll} ][ \033[0;32mWIN\033[0;0m    ]   #{display(i - 1)}   [ o CONGRATULATIONS YOU WIN ]"
+                print "[ #{roll} ]"
+                print "[ \033[0;32mWIN\033[0;0m    ]   "
+                print "#{display(i - 1)}   "
+                print "[ \033[0;32mo CONGRATULATIONS YOU WIN\033[0;0m ]"
                 print "\n"
                 exit
             else
-                print "[ #{roll} ][ \033[0;32mWIN\033[0;0m    ]   #{display(i - 1)}   [ \033[0;32m+ YOU ARE NOW ON STAGE #{i}\033[0;0m  ]"
+                print "[ #{roll} ]"
+                print "[ \033[0;32mWIN\033[0;0m    ]   "
+                print "#{display(i - 1)}   "
+                print "[ \033[0;32m+ YOU ARE NOW ON STAGE #{i}\033[0;0m  ]"
                 print "\n"
                 i += 1
                 roll = reroll(roll)
