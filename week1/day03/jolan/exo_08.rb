@@ -29,7 +29,10 @@ def game(roll)
         if roll == 1
             if i == 0
                 i = 0
-                print "[ #{roll} ][ \033[0;31mERROR\033[0;0m  ]   #{display(i - 1)}   [ \033[0;31m- YOU ARE NOW ON STAGE #{i}\033[0;0m  ]"
+                print "[ #{roll} ]"
+		print "[ \033[0;31mERROR\033[0;0m  ]   "
+		print "#{display(i - 1)}   "
+		print "[ \033[0;31m- YOU ARE NOW ON STAGE #{i}\033[0;0m  ]"
                 print "\n"
                 roll = reroll(roll)
             else
