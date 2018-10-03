@@ -18,12 +18,15 @@ def array_nb(ary_users)
 end
 
 def array_str(ary_users)
-    tmp = "aude"
-    found = ary_users.select{ |ary_users| ary_users.include?(tmp) }
-    puts found
-    tmp = "Aude"
-    found = ary_users.select{ |ary_users| ary_users.include?(tmp) }
-    puts found
+    nb = 0
+    ary_users.each do |elem|
+        i = elem.include?("aude")
+        j = elem.include?("Aude")
+        if i == true || j == true
+            nb += 1
+        end
+    end
+    return nb
 end
 
 def array_upcase(ary_users)
@@ -34,4 +37,4 @@ def array_upcase(ary_users)
     end
 end
 
-array_str(ary_users)
+puts array_str(ary_users)
