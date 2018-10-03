@@ -89,7 +89,7 @@ def game()
         print "[ #{roll} ]"
         print "[ \033[0;32mSTART\033[0;0m  ]   "
         print "#{display(i)}   "
-        print "[ \033[0;32m- YOU ARE NOW ON STAGE #{i}\033[0;0m  ]"
+        print "[ o GAME STARTING HERE      ]"
         print "\n"
     end
     roll = reroll(roll)
