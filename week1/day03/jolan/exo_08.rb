@@ -59,7 +59,7 @@ def putvalue(roll, rule)
         if roll == 5 || roll == 6
             if i == 10
                 print "[ #{roll} ]"
-                print "[ \033[0;32mWIN\033[0;0m    ]   "
+                print "[ \033[0;32mFINISH\033[0;0m ]   "
                 print "#{display(i)}   "
                 print "[ \033[0;32mo CONGRATULATIONS YOU WIN\033[0;0m ]"
                 print "\n"
