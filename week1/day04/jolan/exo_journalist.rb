@@ -2,7 +2,7 @@ ary_users = ["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@marionsouzeau",
 
 def array_len(ary_users)
     len = ary_users.length
-    puts len
+    return len
 end
 
 def array_nb(ary_users)
@@ -29,12 +29,54 @@ def array_str(ary_users)
     return nb
 end
 
-def array_upcase(ary_users)
-    tmp = ""
-    if tmp >= "A"  && tmp <= "Z"
-        found = ary_users.select{ |ary_users| ary_users.include?(tmp) }
-        puts found
+def array_upcase_start(ary_users)
+    nb = 0
+    ary_users.each do |elem|
+        i = elem[1].scan(/[A-Z]/).length
+        if i > 0
+            nb += 1
+        end
     end
+    return nb
 end
 
-puts array_str(ary_users)
+def array_upcase_contains(ary_users)
+    nb = 0
+    ary_users.each do |elem|
+        i = elem.scan(/[A-Z]/).length
+        if i > 0
+            nb += 1
+        end
+    end
+    return nb
+end
+
+def array_underscore(ary_users)
+    nb = 0
+    ary_users.each do |elem|
+        i = elem.scan(/[_]/).length
+        if i > 0
+            nb += 1
+        end
+    end
+    return nb
+end
+
+def array_sort_alpha(ary_users)
+    sort = ary_users.sort_by!{ |elem| elem.downcase }
+    return sort
+end
+
+def launcher(array)
+    puts "There is #{array_len(array)} numbers of elements in the array"
+    puts "There is #{array_nb(array)} numbers of username who contains number"
+    puts "There is #{array_str(array)} numbers of username who contains \"aude\" or \"Aude\""
+    puts "There is #{array_upcase_start(array)} numbers of username who start by upcase"
+    puts "There is #{array_upcase_contains(array)} numbers of username who contains upcase"
+    puts "There is #{array_underscore(array)} numbers of username who contains underscore"
+    print "\n"
+    puts array_sort_alpha(array)
+    print "\n"
+end
+
+launcher(ary_users)
