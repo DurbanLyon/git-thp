@@ -77,7 +77,7 @@ def putvalue(roll, rule)
     end
 end
 
-def game(roll)
+def game()
     print "\n"
     puts "Please type (1) to unshow reroll (0) to hide reroll"
     print "> "
@@ -110,8 +110,7 @@ def launcher()
     puts "  [5, 6] - Go to the next box, if 10 you win"
     print "\n"
 
-    roll = dice()
-    game(roll)
+    game()
 end
 
 launcher()
