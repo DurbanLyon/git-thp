@@ -104,7 +104,7 @@ def launcher()
     puts "  They will be while they dont reach the last stage"
     puts "  Rules are very simple :"
     print "\n"
-    puts "  [1] - Go to the last box, if 0 stay at 0"
+    puts "  [1] - Go to the previous box, if 0 stay at 0"
     puts "  [2, 3, 4] - Dice are rolled again"
     puts "  [5, 6] - Go to the next box, if 10 you win"
     print "\n"
