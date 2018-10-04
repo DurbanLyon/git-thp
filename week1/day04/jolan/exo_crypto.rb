@@ -23,7 +23,6 @@ def find_hash_name(hash)
 end
 
 def less_than_6k(hash)
-    str = 0
     hash.each { |key, val| puts "- #{key}" if val < 6000 }
 end
 
