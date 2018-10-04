@@ -23,7 +23,6 @@ def find_hash_name(hash)
 end
 
 def less_than_6k(hash)
-    str = 0
     hash.each { |key, val| puts "- #{key}" if val < 6000 }
 end
 
@@ -35,11 +34,11 @@ def bigger_in_6k(hash)
 end
 
 def define_hash_min(hash)
-    hash.each { |k, v| puts "- #{k}: #{v}" if v == hash.values.min }
+    hash.each { |key, val| puts "- #{key}: #{val}" if val == hash.values.min }
 end
 
 def define_hash_max(hash)
-    hash.each { |k, v| puts "- #{k}: #{v}" if v == hash.values.max }
+    hash.each { |key, val| puts "- #{key}: #{val}" if val == hash.values.max }
 end
 
 def launcher()
