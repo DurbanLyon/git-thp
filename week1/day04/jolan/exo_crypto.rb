@@ -31,7 +31,7 @@ def bigger_in_6k(hash)
     x = 0
     hash.each { |key, val| x = val if val < 6000 && x < val}
     y = hash.key(x)
-    return "#{y}: #{x}"
+    puts "- #{y} #{x}"
 end
 
 def define_hash_min(hash)
@@ -39,24 +39,26 @@ def define_hash_min(hash)
 end
 
 def define_hash_max(hash)
-    hash.each { |k, v| return "#{k}: #{v}" if v == hash.values.max }
+    hash.each { |k, v| puts "- #{k}: #{v}" if v == hash.values.max }
 end
 
 def launcher()
     value = clean_value(@crypto_price)
     hash_coin = create_hash(@crypto_name, value)
-
+    
     puts "This is the list off all cryptocurrencies who are less thank 6kUSD :"
-    print "\n"
     less_than_6k(hash_coin)
     print "\n"
-    puts "Cryptocurrencies with the biggest value is #{define_hash_max(hash_coin)}"
-    puts "Cryptocurrencies with the smallest value is :"
+    puts "There is #{find_hash_name(hash_coin)} cryptocurrencies who contains the word \"coin\""
     print "\n"
+    puts "Cryptocurrencies with the biggest value is :"
+    define_hash_max(hash_coin)
+    print "\n"
+    puts "Cryptocurrencies with the smallest value is :"
     define_hash_min(hash_coin)
     print "\n"
-    puts "There is #{find_hash_name(hash_coin)} cryptocurrencies who contains the word \"coin\""
-    puts "Cryptocurrencies with the biggest value under 6kUSD is #{bigger_in_6k(hash_coin)}"
+    puts "Cryptocurrencies with the biggest value under 6kUSD is :"
+    bigger_in_6k(hash_coin)
 end
 
 launcher()
