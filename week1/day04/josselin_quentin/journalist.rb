@@ -2,7 +2,7 @@
 
 
 # Savoir si un character string est un digit
-def isDigit (str)
+def isDigit(str)
   digits = ('0'..'9').to_a
   (digits.length).times do |i|
     if str == digits[i]
@@ -13,7 +13,7 @@ def isDigit (str)
 end
 
 # Savoir si un string a des numéros à l'intérieur
-def hasDigits (str)
+def hasDigits(str)
   (str.length).times do |i|
     if isDigit(str[i])
       return true
@@ -23,7 +23,7 @@ def hasDigits (str)
 end
 
 # Compter le nombre d'éléments avec des digits
-def countHandleWithDigits (array)
+def countHandleWithDigits(array)
   nb = 0
   (array.length).times do |i|
     if hasDigits(array[i])
@@ -35,7 +35,7 @@ end
 
 
 # Compter le nombre d'éléments contenant "word" dans un tableau
-def countHandleWithWord (array, word)
+def countHandleWithWord(array, word)
   nb = 0
   array.each do |elem|
     if (elem.downcase).include?(word)
@@ -47,28 +47,60 @@ end
 
 
 # Renvoi vrai si la lettre est en majuscule, faux sinon
-def isUpper (str)
-  str == str.upcase
+def isUpper(str)
+  str != str.downcase
 end
 
 # Compte le nombre de handles commencants par une majuscule
-def countUpperHandle (array)
+def countHandleWithCapital(array)
   nb = 0
-  array.each do |elem|
-    if isUpper(elem[1])
+  array.each do |letter|
+    if isUpper(letter[1])
       nb += 1
     end
   end
   return nb
 end
 
+# Combien contiennent une majuscule ?
+def countHandleWithUpper(array)
+  nb = 0
+  array.each do |word|
+    word.length.times do |i|
+      if isUpper(word[i])
+        nb += 1
+        break
+      end
+    end
+  end
+  return nb
+end
+
+# Combien de _ dans tous les pseudos confondus ?
+def countUnderscores(array)
+  nb = 0
+  array.each do |word|
+    nb += word.count("_")
+  end
+  return nb
+end
+
+# Trie de la liste de handle par ordre alphabétique
+def sort(array)
+  puts array.sort_by {|word| word.downcase}
+end
 
 
+# Execution
 def perform()
   puts "Il y a #{@twitters_array.length} journalistes dans cet array."
   puts "#{countHandleWithDigits(@twitters_array)} handles contiennent au moins un numéro."
   puts "#{countHandleWithWord(@twitters_array, "aude")} handles contiennent le mot 'aude' sans prendre en compte la casse."
-  puts "#{countUpperHandle(@twitters_array)} handles commencent par une majuscule."
+  puts "#{countHandleWithCapital(@twitters_array)} handles commencent par une majuscule."
+  puts "#{countHandleWithUpper(@twitters_array)} handles contiennent une majuscule."
+  puts "#{countUnderscores(@twitters_array)} underscores."
+  puts "Voici la liste triée dans l'ordre alphabétique croissant :\n#{sort(@twitters_array)}"
+
 end
 
 perform()
