@@ -61,6 +61,4 @@ def launcher()
     bigger_in_6k(hash_coin)
 end
 
-
-value = clean_value(@crypto_price)
-puts create_hash(@crypto_name, value)
+launcher()
