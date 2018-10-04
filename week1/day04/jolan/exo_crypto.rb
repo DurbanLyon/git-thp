@@ -35,11 +35,11 @@ def bigger_in_6k(hash)
 end
 
 def define_hash_min(hash)
-    hash.each { |k, v| puts "- #{k}: #{v}" if v == hash.values.min }
+    hash.each { |key, val| puts "- #{key}: #{val}" if val == hash.values.min }
 end
 
 def define_hash_max(hash)
-    hash.each { |k, v| puts "- #{k}: #{v}" if v == hash.values.max }
+    hash.each { |key, val| puts "- #{key}: #{val}" if val == hash.values.max }
 end
 
 def launcher()
