@@ -29,7 +29,7 @@ end
 
 def bigger_in_6k(hash)
     x = 0
-    hash.each { |key, val| x = val if val < 6000 && x < val}
+    hash.each { |key, val| x = val if val < 6000 && x < val }
     y = hash.key(x)
     puts "- #{y} #{x}"
 end
@@ -61,4 +61,6 @@ def launcher()
     bigger_in_6k(hash_coin)
 end
 
-launcher()
+
+value = clean_value(@crypto_price)
+puts create_hash(@crypto_name, value)
