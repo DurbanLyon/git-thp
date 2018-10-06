@@ -1,5 +1,5 @@
 @node_key = [ "WELSH", "FRIES", "BEERS" ]
-@main_key = [ "Lipids", "Carbohydrate", "Protein" ]
+@main_key = [ "Lipid", "Carbohydrate", "Protein" ]
 
 @price_key = [ "PRICE" ]
 @transit_node_key = [ "WELSH", "FRIES", "BEERS", "PRICE" ]
