@@ -1,8 +1,8 @@
-@node_key = [ "WELSH", "FRITES", "BEERS" ]
+@node_key = [ "WELSH", "FRIES", "BEERS" ]
 @main_key = [ "Lipids", "Carbohydrate", "Protein" ]
 
 @price_key = [ "PRICE" ]
-@transit_node_key = [ "WELSH", "FRITES", "BEERS", "PRICE" ]
+@transit_node_key = [ "WELSH", "FRIES", "BEERS", "PRICE" ]
 
 @welsh_value = [ 38.4, 18.3, 36.3 ]
 @fries_value = [ 15, 41, 3.4 ]

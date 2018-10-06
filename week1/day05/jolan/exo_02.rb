@@ -1,4 +1,4 @@
-@node_key = ["WELSH", "FRITES", "BEERS"]
+@node_key = ["WELSH", "FRIES", "BEERS"]
 @main_key = ["Lipids", "Carbohydrate", "Protein"]
 
 @welsh_value = ["38.4", "18.3", "36.3"]
