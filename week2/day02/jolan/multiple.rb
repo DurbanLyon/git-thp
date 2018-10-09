@@ -6,3 +6,5 @@ def multiples(a_nb, b_nb)
     end
     return result.sum
 end
+
+puts multiples(3, 5)

@@ -15,3 +15,7 @@ def ceasar_cipher(string, amplitude)
     end
     return ciphered_string
 end
+
+string = "fSociety"
+
+puts ceasar_cipher(string, 42)
