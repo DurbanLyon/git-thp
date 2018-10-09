@@ -4,7 +4,7 @@ def found_data(string, dictionary)
     string.downcase.scan(/\w+/) do | word |
         dictionary.each do | elem |
             if result.include?(elem)
-                result[elem] = result[elem] + 1
+                result[elem] += 1
             else 
                 result[elem] = 1
             end if word.include?(elem)
