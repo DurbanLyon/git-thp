@@ -1,8 +1,8 @@
-def found_data(string, dictionary)
+def found_data(string, dictionnary)
     result = Hash.new
 
     string.downcase.scan(/\w+/) do | word |
-        dictionary.each do | elem |
+        dictionnary.each do | elem |
             if result.include?(elem)
                 result[elem] += 1
             else 
@@ -13,6 +13,6 @@ def found_data(string, dictionary)
     return result.sort.to_h
 end
   
-dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+dictionnary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
   
-print found_data("Howdy partner, sit down! How's it going?", dictionary)
+print found_data("Howdy partner, sit down! How's it going?", dictionnary)
