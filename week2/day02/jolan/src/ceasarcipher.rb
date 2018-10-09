@@ -4,9 +4,7 @@ def ceasar_cipher(string, amplitude)
     alphabet = Array('a'..'z')
 
     string_to_array.each do | char |
-        unless alphabet.include?(char.downcase)
-            ciphered_string << char
-        end
+        ciphered_string << char unless alphabet.include?(char.downcase)
         alphabet.each do | letter |
             if char.downcase == letter
                 i = alphabet.index(letter) + amplitude
