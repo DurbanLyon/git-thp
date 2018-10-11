@@ -56,7 +56,7 @@ def parse_mail(url)
 end
 
 def launcher()
-    key = parse_townhalls
+    key = parse_townhalls()
     content = parse_townhalls()
 
     url = get_url(content)
