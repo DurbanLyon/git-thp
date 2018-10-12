@@ -43,7 +43,7 @@ def get_url(accueil)
         
     content = Array.new
     doc.xpath('//td//a').each do | link |
-        content << accueil + link.values[0] if  link.values[0].include?('/deputes')
+        content << accueil + link.values[0] if link.values[0].include?('/deputes')
     end
     return content
 end
