@@ -11,13 +11,17 @@ class Player
     end
 
     def get_pos(board)
-        puts "Enter [0-8]:"
+        puts "  - Please type a position between 0 and 8"
+        print "> "
         pos = gets.chomp
         pos = pos.to_i if from_zero_to_eight?(pos)
         print "\n"
 
-        while !pos.is_a?(Integer)
-            puts "\n You entered #{pos}, please retry"
+        while !pos.is_a?(Integer) || board.chosen_pos?(pos)
+            print "\n"
+            puts "You entered #{pos}, please retry !"
+            puts "  - Please type a position between 0 and 8"
+            print "> "
             pos = gets.chomp
             pos = pos.to_i if from_zero_to_eight?(pos)
             print "\n"

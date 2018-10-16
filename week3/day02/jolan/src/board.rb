@@ -9,7 +9,7 @@ class Board
         pos[index] = mark
     end
 
-    def game_over?
+    def end_game?
         [board_pos[0], board_pos[1], board_pos[2]].uniq.size == 1 ||
         [board_pos[3], board_pos[4], board_pos[5]].uniq.size == 1 ||
         [board_pos[6], board_pos[7], board_pos[8]].uniq.size == 1 ||
@@ -20,16 +20,12 @@ class Board
         [board_pos[2], board_pos[4], board_pos[6]].uniq.size == 1
     end
 
-    def tie?
+    def can_add?
         board_pos.all? { | elem | elem == 'X' || elem == 'O' }
     end
 
     def chosen_pos?(pos)
         board_pos[pos] == 'X' || board_pos[pos] == 'O'
-    end
-
-    def not_chosen_pos?(pos)
-        board_pos[pos] != 'X' && board_pos[pos] != 'O'
     end
 
     def print_current_board_state()
