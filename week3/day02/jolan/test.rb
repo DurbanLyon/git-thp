@@ -3,10 +3,35 @@ require 'awesome_print'
 class Game
     def initialize(id, mode)
         @array = Map.new(id, mode)
+        test_array = [['X', 'O', 'O'], ['O', 'X', 'O'], ['X', 'O', 'X']]
+        win = is_win?(test_array)
+        print "lol" if win == true
     end
 
-    def get_pos(array)
+    def is_win?(array)
+        return true if array[0][0] == 'X' && array[1][0] == 'X' && array[2][0] == 'X'
+        return true if array[0][0] == 'O' && array[1][0] == 'O' && array[2][0] == 'O'
 
+        return true if array[0][1] == 'X' && array[1][1] == 'X' && array[2][1] == 'X'
+        return true if array[0][1] == 'O' && array[1][1] == 'O' && array[2][1] == 'O'
+
+        return true if array[0][2] == 'X' && array[1][2] == 'X' && array[2][2] == 'X'
+        return true if array[0][2] == 'O' && array[1][2] == 'O' && array[2][2] == 'O'
+
+        return true if array[0][0] == 'X' && array[1][1] == 'X' && array[2][2] == 'X'
+        return true if array[0][0] == 'O' && array[1][1] == 'O' && array[2][2] == 'O'
+
+        return true if array[0][2] == 'X' && array[1][1] == 'X' && array[2][0] == 'X'
+        return true if array[0][2] == 'O' && array[1][1] == 'O' && array[2][0] == 'O'
+
+        return true if array[0][0] == 'X' && array[0][1] == 'X' && array[0][2] == 'X'
+        return true if array[0][0] == 'O' && array[0][1] == 'O' && array[0][2] == 'O'
+
+        return true if array[1][0] == 'X' && array[1][1] == 'X' && array[1][2] == 'X'
+        return true if array[1][0] == 'O' && array[1][1] == 'O' && array[1][2] == 'O'
+        
+        return true if array[2][0] == 'X' && array[2][1] == 'X' && array[2][2] == 'X'
+        return true if array[2][0] == 'O' && array[2][1] == 'O' && array[2][2] == 'O'
     end
 end
 
@@ -28,7 +53,8 @@ class Map
             player_output_map(map, id)
             print "\n"
         elsif mode == "player"
-            player_output_map(map, id)
+            test_array = [['X', 'O', 'O'], ['O', 'X', 'O'], ['X', 'O', 'X']]
+            player_output_map(test_array, id)
             print "\n"
         end
     end
