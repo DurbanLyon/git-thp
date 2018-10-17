@@ -1,6 +1,5 @@
-require 'google_drive'
-require 'dotenv'
 require 'csv'
+require 'dotenv'
 
 Dotenv.load
 
@@ -11,7 +10,7 @@ class ManageCsv
 
     def create(hash)
         CSV.open(ENV['CSV'], 'wb') do | csv |
-            csv << [ "NAME", "MAIL" ]
+            csv << [ 'NAME', 'MAIL' ]
             hash.each do | key, value | 
                 csv << [ key, value ]
             end

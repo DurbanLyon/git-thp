@@ -14,6 +14,6 @@ Bundler.require
 
 @hash = Scrapper.new.launcher()
 
-ManageJson.new(@hash)
+#ManageJson.new(@hash)
 #ManageCsv.new.create(@hash)
-#WriteSpreadsheet.new.write(@hash)
+WriteSpreadsheet.new.write()
