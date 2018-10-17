@@ -1,3 +1,4 @@
+require 'googleauth'
 require 'google_drive'
 require 'json'
 require 'dotenv'
@@ -9,17 +10,18 @@ class WriteSpreadsheet
     def initialize()
     end
 
+    #doesnt work#
     def write()
         session = GoogleDrive::Session.from_config('.config.json')
-        cell = session.spreadsheet_by_key('1FqZlMqttIJOz5EI839218z9AZqsMrRDI9ArDDo9GI-M').worksheets[0]
-      
-        emails = JSON.parse(File.read(ENV['JSON']))
-        emails.each.with_index {
-          | townhall, index |
-          cell[index+1, 1] = townhall[0]
-          cell[index+1, 2] = townhall[1]
-          puts "#{townhall[0]} added to spreadsheet at line #{index+1}"
-        }
-        cell.save
+        doc = session.spreadsheet_by_key(ENV['SPREADSHEET']).worksheets[0]
+
+        json = File.read(ENV['JSON'])
+        content = JSON.parse(json)
+    
+        content.each_with_index  do | key, value |
+           doc[index + 1] = key
+           doc[index + 1] = value
+        end
+        doc.save
     end
 end
