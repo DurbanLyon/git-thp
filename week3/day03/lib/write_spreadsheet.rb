@@ -1,4 +1,3 @@
-require 'googleauth'
 require 'google_drive'
 require 'json'
 require 'dotenv'
