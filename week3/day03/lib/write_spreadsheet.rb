@@ -1,4 +1,7 @@
 require 'google_drive'
+require 'dotenv'
+
+Dotenv.load
 
 class WriteSpreadsheet
 
