@@ -6,7 +6,7 @@ class WriteSpreadsheet
     end
 
     def write(hash)
-        session = GoogleDrive::Session.from_config('config.json')
+        session = GoogleDrive::Session.from_config('.config.json')
         doc = session.spreadsheet_by_key(ENV['SPREADSHEET_KEY']).worksheets[0]
 
         i = 1
