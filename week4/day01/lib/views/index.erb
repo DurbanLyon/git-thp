@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+
+  <body>
+    <h1>Mon super site de gossip, du dossier views !</h1>
+        <% gossips.each do |gossip| %>
+        <p>
+          <%= gossip[0] %><br/>
+          <%= gossip[1] %><br/>
+        </p>
+        <% end %>
+  </body>
+</html>
